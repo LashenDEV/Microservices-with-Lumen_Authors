@@ -22,9 +22,9 @@ class AuthorFactory extends Factory
     public function definition()
     {
         return [
-            'gender' => $gender = $this->faker->randomElements(['male', 'female']),
+            'gender' => $gender = $this->faker->randomElement(['male', 'female']),
             'name' => $this->faker->name($gender),
-            'county' => $this->faker->country,
+            'country' => $this->faker->country,
         ];
     }
 }

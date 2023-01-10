@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Author;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\App;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,6 +15,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Author::factory()->count(50)->make();
+        Author::factory()->count(50)->create();
     }
 }
